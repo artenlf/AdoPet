@@ -1,0 +1,21 @@
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5.625em;
+    padding-bottom: 1em;
+}
+
+.botao {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: .469em 0;
+    margin: 0.5em 0;
+    box-shadow: 2px 2px 4px var(--sombra);
+    box-sizing: border-box;
+}

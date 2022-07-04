@@ -1,0 +1,9 @@
+.ilustracao {
+    text-align: center;
+}
+
+.ilustracao__imagem {
+    width: 68.75%;
+    margin-right: 3em;
+    margin-bottom: -1em;
+}

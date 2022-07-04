@@ -1,0 +1,13 @@
+.cabecalho {
+    padding-bottom: 2em;
+}
+
+.cabecalho__botoes {
+    display: flex;
+    align-items: center;
+    padding: 3em 3em;
+}
+
+.botoes__links {
+    margin-right: 3.5em;
+}
