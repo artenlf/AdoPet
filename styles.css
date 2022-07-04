@@ -1,0 +1,31 @@
+@import url("assets/css/cabecalho.css");
+@import url("assets/css/rodape.css");
+@import url("assets/css/logo.css");
+@import url("assets/css/boas-vindas.css");
+@import url("assets/css/botoes.css");
+@import url("assets/css/ilustracao.css");
+
+:root {
+    --azul-fundo: #3772FF;
+    --verde: #36D6AD;
+    --branco: #FFFFFF;
+    --vermelho: #FC7071;
+    --sombra: #00000025;
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-titulo: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: var(--azul-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    background-image: url(assets/img/Forma1.png);
+    background-repeat: no-repeat;
+}
+
+main {
+    background-image: url(assets/img/Forma2.png);
+    background-repeat: no-repeat;
+    background-position: 100% 25%;
+}

@@ -1,0 +1,9 @@
+.logo {
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+.logo__imagem {
+    width: 57%;
+}
