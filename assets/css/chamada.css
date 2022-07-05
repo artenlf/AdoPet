@@ -1,0 +1,9 @@
+.chamada {
+    color: var(--azul-fundo);
+    text-align: center;
+}
+
+.chamada__texto {
+    margin: 1em 1em;
+    line-height: 1.2;
+}
