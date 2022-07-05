@@ -1,0 +1,44 @@
+form {
+    margin-bottom: 7.75em;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1.5em;
+}
+
+.formulario__label {
+    color: var(--cinza);
+    margin-bottom: .5em;
+}
+
+input {
+    text-align: center;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: inherit;
+    background-color: var(--cinza-fundo);
+    border-radius: 6px;
+    border: none;
+    padding: 1.125em 0;
+    box-shadow: 2px 2px 4px var(--sombra);
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #BCBCBC;
+}
+
+.cadastrar {
+    background-color: var(--vermelho);
+    font-weight: 600;
+    color: var(--branco);
+    padding: .917em 3.557em;
+    margin-top: .5em;
+    box-sizing: border-box;
+}
