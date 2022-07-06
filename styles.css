@@ -29,3 +29,10 @@ main {
     background-repeat: no-repeat;
     background-position: 100% 25%;
 }
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
