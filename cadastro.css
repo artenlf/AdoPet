@@ -36,6 +36,13 @@ body {
 main {
     background-image: url(assets/img/Forma3.png);
     background-repeat: no-repeat;
-    background-position: 0% 60%;
+    background-position: 0% 85%;
     background-size: 23.5%;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
