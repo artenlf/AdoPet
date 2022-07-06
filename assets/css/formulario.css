@@ -34,7 +34,7 @@ input::placeholder {
     color: #BCBCBC;
 }
 
-.cadastrar {
+.formulario__submit {
     background-color: var(--vermelho);
     font-weight: 600;
     color: var(--branco);
