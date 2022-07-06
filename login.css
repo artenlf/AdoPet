@@ -1,0 +1,35 @@
+a {
+    display: block;
+    color: var(--vermelho);
+    text-decoration: underline;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+}
+
+.logo__alternativo {
+    margin-top: -.25em;
+}
+
+.chamada {
+    margin: 4em 0 2em 0;
+}
+
+input {
+    padding: .917em 0;
+}
+
+.formulario__campo {
+    margin-bottom: 2em;
+}
+
+.formulario__submit {
+    padding: .917em 4.3em;
+}
+
+main {
+    background-image: url(assets/img/Forma3.png);
+    background-repeat: no-repeat;
+    background-position: 0% 85%;
+    background-size: 23.5%;
+    padding-bottom: 7em;
+}
