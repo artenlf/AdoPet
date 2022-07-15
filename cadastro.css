@@ -1,3 +1,4 @@
+@import url("assets/css/background-alternativo.css");
 @import url("assets/css/cabecalho.css");
 @import url("assets/css/rodape.css");
 @import url("assets/css/logo.css");
@@ -19,30 +20,11 @@
 }
 
 body {
-    background-color: var(--branco);
-    font-family: var(--fonte-principal);
-    font-size: 16px;
-    font-weight: 400;
-    background-image: url(assets/img/Forma1.png);
-    background-repeat: no-repeat;
-}
-
-.patas {
-    background-image: url(assets/img/Patas.png);
-    background-repeat: no-repeat;
-    background-position: 100% 0%;
-}
-
-main {
-    background-image: url(assets/img/Forma3.png);
-    background-repeat: no-repeat;
-    background-position: 0% 85%;
-    background-size: 23.5%;
-}
-
-.container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
+
+/* .container__pagina {
+    position: relative;
+    height: 100vh;
+} */

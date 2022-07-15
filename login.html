@@ -16,52 +16,46 @@
     <link rel="stylesheet" href="login.css">
 </head>
 
-<div class="patas">
-
     <body>
-        <section class="container">
-            <header class="cabecalho">
-                <div class="cabecalho__botoes">
-                    <a href="index.html" class="botoes__links">
-                        <img src="assets/img/Casa.svg" alt="Ícone de uma casa">
-                    </a>
-                    <a href="#" class="cabecalho__links">
-                        <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope">
-                    </a>
-                </div>
-            </header>
+        <header class="cabecalho">
+            <div class="cabecalho__botoes">
+                <img src="assets/img/Logo-Cabecalho.svg" alt="Logo da Adopet" class="cabecalho__logo">
+                <a href="index.html" class="botoes__links">
+                    <img src="assets/img/Casa.svg" alt="Ícone de uma casa">
+                </a>
+                <a href="#" class="cabecalho__links">
+                    <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope">
+                </a>
+            </div>
+        </header>
 
-            <main>
-                <section class="logo__alternativo">
-                    <img src="assets/img/Logo-azul.svg" alt="Logo da AdoPet" class="logo__alternativo-imagem">
-                </section>
-                <section class="chamada">
-                    <p class="chamada__texto">Já tem conta? Faça seu login:</p>
-                </section>
-                <section class="formulario">
-                    <form action="">
-                        <fieldset>
-                            <div class="formulario__campo">
-                                <label for="email" class="formulario__label">Email</label>
-                                <input type="email" name="email" id="email" required placeholder="Insira seu email">
-                            </div>
-                            <div class="formulario__campo">
-                                <label for="senha" class="formulario__label">Senha</label>
-                                <input type="password" name="senha" id="senha" required placeholder="Insira sua senha">
-                                <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
-                            </div>
-                        </fieldset>
-                        <a href="#" class="esqueci__senha">Esqueci minha senha</a>
-                        <input type="submit" value="Entrar" class="formulario__submit">
-                    </form>
-                </section>
-            </main>
+        <main>
+            <section class="logo__alternativo">
+                <img src="assets/img/Logo-azul.svg" alt="Logo da AdoPet" class="logo__alternativo-imagem">
+            </section>
+            <section class="chamada">
+                <p class="chamada__texto">Já tem conta? Faça seu login:</p>
+            </section>
+            <section class="formulario">
+                <form action="">
+                    <fieldset>
+                        <div class="formulario__campo">
+                            <label for="email" class="formulario__label">Email</label>
+                            <input type="email" name="email" id="email" required placeholder="Insira seu email">
+                        </div>
+                        <div class="formulario__campo">
+                            <label for="senha" class="formulario__label">Senha</label>
+                            <input type="password" name="senha" id="senha" required placeholder="Insira sua senha">
+                            <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
+                        </div>
+                    </fieldset>
+                    <a href="#" class="esqueci__senha">Esqueci minha senha</a>
+                    <input type="submit" value="Entrar" class="formulario__submit">
+                </form>
+            </section>
+        </main>
 
-            <footer class="rodape">
-                <p class="rodape__texto">2022 - Desenvolvido por Alura.</p>
-            </footer>
-        </section>
+        <footer class="rodape">2022 - Desenvolvido por Alura.</footer>
     </body>
-</div>
 
 </html>
