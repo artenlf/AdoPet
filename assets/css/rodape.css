@@ -1,7 +1,16 @@
-.rodape__texto {
+.rodape {
+    flex-shrink: 0;
     position: relative;
-    color: var(--branco);
     text-align: center;
-    padding: 3em 2em;
+    color: var(--branco);
     background-color: var(--verde);
+    padding: 44px 0;
+    z-index: 2;
+}
+
+@media screen and (min-width: 1440px) {
+    .rodape {
+        padding: 32px;
+    }
+    
 }

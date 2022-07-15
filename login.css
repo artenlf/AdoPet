@@ -1,4 +1,16 @@
-a {
+main {
+    margin-bottom: 7em;
+}
+
+.chamada {
+    margin: 3em auto 2em auto;
+}
+
+.formulario__campo {
+    margin-bottom: 2em;
+}
+
+.esqueci__senha {
     display: block;
     color: var(--vermelho);
     text-decoration: underline;
@@ -6,30 +18,47 @@ a {
     margin-bottom: 1.5em;
 }
 
-.logo__alternativo {
-    margin-top: -.25em;
-}
-
-.chamada {
-    margin: 4em 0 2em 0;
-}
-
-input {
-    padding: .917em 0;
-}
-
-.formulario__campo {
-    margin-bottom: 2em;
-}
-
 .formulario__submit {
-    padding: .917em 4.3em;
+    margin-bottom: -1.63px;
 }
 
-main {
-    background-image: url(assets/img/Forma3.png);
-    background-repeat: no-repeat;
-    background-position: 0% 85%;
-    background-size: 23.5%;
-    padding-bottom: 7em;
+@media screen and (min-width: 768px) {
+
+    main {
+        margin-bottom: 19.5em;
+    }
+
+    .chamada {
+        margin: 2em auto -2em auto;
+    }
+
+    .esqueci__senha {
+        display: none;
+    }
+
+    .formulario__campo {
+        margin: 1em;
+    }
+
+    .formulario__submit {
+        margin: 1em 0 2.5px 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    main {
+        margin-bottom: 12.563em;
+    }
+
+    .chamada {
+        margin-top: 3em;
+        margin-bottom: .25em;
+    }
+    
+    .formulario__submit {
+        display: inherit;
+        margin: 1em auto 3.5px auto;
+    }
+
 }

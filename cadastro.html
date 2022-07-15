@@ -15,64 +15,76 @@
     <link rel="stylesheet" href="cadastro.css">
 </head>
 
-<div class="patas">
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__botoes">
+            <img src="assets/img/Logo-Cabecalho.svg" alt="Logo da Adopet" class="cabecalho__logo">
+            <a href="index.html" class="botoes__links">
+                <img src="assets/img/Casa.svg" alt="Ícone de uma casa">
+            </a>
+            <a href="#" class="cabecalho__links">
+                <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope">
+            </a>
+        </div>
+    </header>
 
-    <body>
-        <section class="container">
-            <header class="cabecalho">
-                <div class="cabecalho__botoes">
-                    <a href="index.html" class="botoes__links">
-                        <img src="assets/img/Casa.svg" alt="Ícone de uma casa">
-                    </a>
-                    <a href="#" class="cabecalho__links">
-                        <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope">
-                    </a>
-                </div>
-            </header>
-
-            <main>
-                <section class="logo__alternativo">
-                    <img src="assets/img/Logo-azul.svg" alt="Logo da AdoPet" class="logo__alternativo-imagem">
-                </section>
-                <section class="chamada">
-                    <p class="chamada__texto">Ainda não tem cadastro?</p>
-                    <p class="chamada__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
-                </section>
-                <section class="formulario">
-                    <form action="">
-                        <fieldset>
-                            <div class="formulario__campo">
-                                <label for="email" class="formulario__label">Email</label>
-                                <input type="email" name="email" id="email" required
-                                    placeholder="Escolha seu melhor email">
-                            </div>
-                            <div class="formulario__campo">
-                                <label for="nome" class="formulario__label">Nome</label>
-                                <input type="text" name="nome" id="nome" required
-                                    placeholder="Digite seu nome completo">
-                            </div>
-                            <div class="formulario__campo">
-                                <label for="senha" class="formulario__label">Senha</label>
-                                <input type="password" name="senha" id="senha" required placeholder="Crie uma senha">
-                                <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
-                            </div>
-                            <div class="formulario__campo">
-                                <label for="confirmasenha" class="formulario__label">Confirme sua senha</label>
-                                <input type="password" name="confirmasenha" id="confirmasenha" required
-                                    placeholder="Repita a senha criada acima">
-                                <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
-                            </div>
-                        </fieldset>
-                        <input type="submit" value="Cadastrar" class="formulario__submit">
-                    </form>
-                </section>
-            </main>
-            <footer class="rodape">
-                <p class="rodape__texto">2022 - Desenvolvido por Alura.</p>
-            </footer>
+    <main>
+        <section class="logo__alternativo">
+            <img src="assets/img/Logo-azul.svg" alt="Logo da AdoPet" class="logo__alternativo-imagem">
         </section>
-    </body>
-
-</div>
+        <section class="chamada">
+            <p class="chamada__texto">Ainda não tem cadastro?</p>
+            <p class="chamada__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+        </section>
+        <section class="formulario">
+            <form action="#">
+                <fieldset>
+                    <!-- A div abaixo provavelmente vai ser substituida com script javascript mais tarde. Está certo, mas por questão de boas práticas e exercício, deverá entrar via js. -->
+                    <div class="formulario__campo formulario__tablet-desktop">
+                        <label for="nome" class="formulario__label">Nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
+                    </div>
+                    <!-- fim da div a ser substituida -->
+                    <div class="formulario__campo">
+                        <label for="email" class="formulario__label">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Escolha seu melhor email">
+                    </div>
+                    <!-- A classe formulario__mobile foi criada para funcionar sem a inclusão de um script js. Como a div "formulario__tablet-desktop" acima, deverá ser substituida por script js. -->
+                    <div class="formulario__campo formulario__mobile">
+                        <!--fim da classe a ser substituida -->
+                        <label for="nome" class="formulario__label">Nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="senha" class="formulario__label">Senha</label>
+                        <input type="password" name="senha" id="senha" required placeholder="Crie uma senha">
+                        <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
+                    </div>
+                    <!-- A classe formulario__mobile-tablet foi criada para funcionar sem a inclusão de um script js. Como a div "formulario__tablet-desktop" acima, deverá ser substituida por script js. -->
+                    <div class="formulario__campo formulario__mobile-tablet">
+                        <!--fim da classe a ser substituida -->
+                        <label for="confirmasenha" class="formulario__label">Confirme sua senha</label>
+                        <input type="password" name="confirmasenha" id="confirmasenha" required
+                            placeholder="Repita a senha criada acima">
+                        <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
+                    </div>
+                    <!-- A div abaixo provavelmente vai ser substituida com script javascript mais tarde. Está certo, mas por questão de boas práticas e exercício, deverá entrar via js. -->
+                    <div class="formulario__campo formulario__desktop">
+                        <label for="confirmasenha" class="formulario__label">Confirme sua senha</label>
+                        <input type="password" name="confirmasenha" id="confirmasenha" required
+                            placeholder="Repita a senha criada">
+                        <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
+                    </div>
+                    <!-- fim da div a ser substituida -->
+                </fieldset>
+                <input type="submit" value="Cadastrar" class="formulario__submit">
+                <!-- O input abaixo provavelmente vai ser substituida com script javascript mais tarde. Está certo, mas por questão de boas práticas e exercício, deverá entrar via js. -->
+                <input type="submit" value="Cadastrar!" class="formulario__submit formulario__desktop">
+                <!-- fim do input a ser substituida -->
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">2022 - Desenvolvido por Alura.</footer>
+</body>
 
 </html>

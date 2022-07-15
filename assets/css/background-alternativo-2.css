@@ -1,0 +1,20 @@
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    background: url(../img/Forma1.png) left top no-repeat;
+    background-size: 352px 295px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 561px 470px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background: url(../img/Forma1.png) left top no-repeat,
+            url(../img/Forma2.png) right top 195px no-repeat;
+        background-size: 561px 470px, 134.45px 664px;
+    }
+}

@@ -1,8 +1,11 @@
 .logo__alternativo {
     text-align: center;
-    position: relative;
+    margin-bottom: 1.5em;
+    /* position: relative; */
 }
 
 .logo__alternativo-imagem {
     width: 39.45%;
+    max-width: 252px;
+    margin-bottom: 5.49px;
 }

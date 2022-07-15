@@ -1,0 +1,24 @@
+body {
+    background-color: var(--azul-fundo);
+    font-family: var(--fonte-principal);
+    background: url(../img/Forma2.png) no-repeat right 40%,
+        url(../img/Forma1.png) no-repeat top left,
+        var(--azul-fundo);
+    background-size: 69px 415px, 352px 295px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 134.45px 664px, 561px 470px;
+    }
+
+    main {
+        margin-top: 8em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        margin-top: 0;
+    }
+}

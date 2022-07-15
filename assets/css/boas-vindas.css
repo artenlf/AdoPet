@@ -11,6 +11,44 @@
 }
 
 .boas-vindas__texto {
-    margin: 1em 3em;
-    line-height: 1.5;
+    width: 248px;
+    height: 72px;
+    margin: 1em auto;
+    line-height: 24px;
+}
+
+.boas-vindas__texto-alternativo {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .boas-vindas {
+        margin: 2.5em 0 2em 0;
+    }
+
+    .boas-vindas__titulo {
+        font-family: var(--fonte-principal);
+        font-size: 28px;
+    }
+
+    .boas-vindas__texto {
+        display: none;
+    }
+
+    .boas-vindas__texto-alternativo {
+        display: block;
+        width: 344px;
+        height: 78px;
+        font-size: 18px;
+        margin: 1em auto;
+        line-height: 26px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .boas-vindas__texto-alternativo {
+        width: 488px;
+        height: 52px;
+    }
 }

@@ -1,9 +1,22 @@
 .logo {
     text-align: center;
-    padding: 1em;
-    position: relative;
+    margin-top: 1em;
 }
 
 .logo__imagem {
-    width: 57%;
+    width: 187px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo__imagem {
+        width: 252px;
+        height: 62px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo__imagem {
+        width: 260px;
+        height: 64px;
+    }
 }

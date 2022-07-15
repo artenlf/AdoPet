@@ -1,23 +1,42 @@
 .botoes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 5.625em;
-    padding-bottom: 1em;
+    margin-top: 1.5em;
 }
 
 .botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--vermelho);
     color: var(--branco);
     font-family: inherit;
     font-size: inherit;
     font-weight: 600;
     text-align: center;
-    text-decoration: none;
     border: none;
     border-radius: 6px;
-    padding: .75em 0;
-    margin: 0.5em 0;
+    width: 180px;
+    height: 40px;
+    margin: 1em auto;
     box-shadow: 2px 2px 4px var(--sombra);
     box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .botao {
+        font-size: 18px;
+        width: 344px;
+        height: 48px;
+        margin-bottom: 18.5px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .botoes {
+        margin-bottom: 31.5px;
+    }
+
+    .botao {
+        width: 362px;
+    }
+
 }

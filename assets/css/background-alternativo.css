@@ -1,0 +1,26 @@
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    background: url(../img/Patas-mobile.png) right top -3px no-repeat,
+        url(../img/Forma1.png) left top no-repeat,
+        url(../img/Forma3.png) left 72.5% no-repeat;
+    background-size: auto auto, 352px 295px, 82.73px 415px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: url(../img/Patas-tablet.png) right -3px top -3px no-repeat,
+            url(../img/Forma1.png) left top no-repeat,
+            url(../img/Forma2.png) right center no-repeat;
+        background-size: auto auto, 561px 470px, 134.45px 664px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background: url(../img/Patas-desktop.png) right top no-repeat,
+            url(../img/Forma1.png) left top no-repeat,
+            url(../img/Forma2.png) right top 195px no-repeat;
+        background-size: 317.67px 407.04px, 561px 470px, 134.45px 664px;
+    }
+}
