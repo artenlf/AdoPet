@@ -1,5 +1,7 @@
 @import url(/assets/css/chamada.css);
+@import url(/animais.css);
 @import url(/assets/css/background-alternativo-3.css);
+
 
 .chamada {
     width: 226px;
