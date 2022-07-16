@@ -40,6 +40,32 @@
         <section class="chamada">
             <p class="chamada__texto">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
         </section>
+        <section class="mensagem__container">
+            <form action="">
+                <fieldset>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Insira seu nome completo">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" required
+                            placeholder="Insira seu telefone e/ou whatsapp">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Nome do Animal</label>
+                        <input type="text" name="nome-animal" id="animal" required
+                            placeholder="Por qual animal você se interessou?">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Mensagem</label>
+                        <textarea type="text" name="mensagem" id="mensagem" required
+                            placeholder="Escreva sua mensagem."></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar" class="formulario__submit">
+            </form>
+        </section>
 
     </main>
 

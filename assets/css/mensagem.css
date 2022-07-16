@@ -1,0 +1,150 @@
+@import url(/assets/css/chamada.css);
+@import url(/assets/css/background-alternativo-3.css);
+
+.chamada {
+    width: 226px;
+    height: 60px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.chamada__texto {
+    margin: 0;
+}
+
+.mensagem__container {
+    background-color: var(--cinza-fundo);
+    border-radius: 10px;
+    width: 312px;
+    height: 636px;
+    margin: 0 auto 13.41px auto;
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__label {
+    font-weight: 600;
+    color: var(--azul-fundo);
+    margin: 1em;
+}
+
+input {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    margin: 0 auto;
+    width: 280px;
+    height: 48px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px #00000015;
+    box-sizing: border-box;
+}
+
+input::placeholder,
+#mensagem::placeholder {
+    padding: 12.5px;
+}
+
+input:focus, #mensagem:focus {
+    padding: 8px;
+}
+
+.formulario__campo:first-child {
+    margin-top: 1.2em;
+}
+
+.formulario__campo:last-child textarea {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    color: var(--cinza-claro);
+    width: 280px;
+    height: 172px;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px #00000015;
+    box-sizing: border-box;
+}
+
+.formulario__submit {
+    display: flex;
+    justify-content: center;
+    background-color: var(--vermelho);
+    font-weight: 600;
+    font-size: inherit;
+    color: var(--branco);
+    width: 148px;
+    height: 40px;
+    margin-top: 1.5em;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    
+    main {
+        margin-bottom: 64.6px;
+    }
+
+    .chamada {
+        display: flex;
+        justify-content: center;
+        width: 524px;
+        height: 52px;
+        margin-bottom: 2.5em;
+    }
+
+
+    .chamada__texto {
+        display: flex;
+        width: inherit;
+        height: inherit;
+    }
+
+    .mensagem__container {
+        width: 524px;
+        height: 628px;
+    }
+
+    input {
+        width: 492px;
+        height: 48px;
+    }
+
+    .formulario__campo:last-child textarea {
+        width: 492px;
+        height: 172px;
+    }
+
+    .formulario__submit {
+        width: 164px;
+        margin: 2em auto;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        margin-top: 38.96px;
+        margin-bottom: 40.66px;
+    }
+
+    .chamada {
+        width: 492px;
+        margin-bottom: 2.3em;
+    }
+
+    .mensagem__container {
+        width: 552px;
+        height: 623px;
+        margin: 0 auto;
+    }
+
+    .formulario__label {
+        margin: 1em 0 .5em 30px;
+    }
+    
+    input {
+        margin-bottom: .5em;
+    }
+}
