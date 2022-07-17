@@ -14,7 +14,7 @@
     margin: 0;
 }
 
-.mensagem__container {
+.mensagem__container, .perfil__container {
     background-color: var(--cinza-fundo);
     border-radius: 10px;
     width: 312px;
@@ -57,7 +57,7 @@ input:focus, #mensagem:focus {
     margin-top: 1.2em;
 }
 
-.formulario__campo:last-child textarea {
+.formulario__campo textarea {
     font-family: var(--fonte-principal);
     font-size: 14px;
     color: var(--cinza-claro);
