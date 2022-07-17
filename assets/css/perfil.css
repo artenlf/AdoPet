@@ -1,0 +1,103 @@
+@import url(/assets/css/chamada.css);
+@import url(/animais.css);
+@import url(/assets/css/background-alternativo-3.css);
+@import url(/assets/css/mensagem.css);
+
+.perfil__icone {
+    border-radius: 50%;
+}
+
+.chamada__texto {
+    width: 247px;
+    height: 60px;
+}
+
+.perfil__container {
+    height: 825px;
+}
+
+.perfil__titulo {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--cinza);
+    padding-top: 1.6em;
+}
+
+.formulario__campo:first-child {
+    margin: 0;
+}
+
+.formulario__foto {
+    text-align: center;
+}
+
+.formulario__foto img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.foto__editar {
+    
+    font-size: 12px;
+    color: var(--vermelho);
+    margin-top: .5em;
+}
+
+.formulario__campo textarea {
+    height: 176px;
+}
+
+.formulario__submit {
+    margin-top: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin-top: calc(7.5em + 0.6px);
+        margin-bottom: 1em;
+    }
+
+    .chamada, .chamada__texto {
+        width: 524px;
+        height: 52px;
+    }
+    
+    .perfil__container {
+        width: 524px;
+        height: 756px;
+    }
+
+    .formulario__campo:last-child textarea {
+        height: 104px;
+    }
+
+    .formulario__submit {
+        margin-top: 2.5em;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    main {
+        margin-top: 3em;
+    }
+
+    .chamada {
+        margin-bottom: calc(2em - 1.4px);
+    }
+
+    .chamada, .chamada__texto {
+        width: 552px;
+    }
+
+    .perfil__container {
+        width: 552px;
+    }
+
+    .formulario__submit {
+        margin-top: 3em;
+    }
+}
