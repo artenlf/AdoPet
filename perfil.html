@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | AdoPet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="/assets/css/perfil.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__separador">
+            <div class="cabecalho__botoes">
+                <img src="assets/img/Logo-Cabecalho.svg" alt="Logo da Adopet" class="cabecalho__logo">
+                <a href="index.html" class="botoes__links">
+                    <img src="assets/img/Casa.svg" alt="Ícone de uma casa">
+                </a>
+                <a href="mensagem.html" class="cabecalho__links">
+                    <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope">
+                </a>
+            </div>
+            <div class="cabecalho__perfil">
+                <a href="#" class="perfil__link">
+                    <img src="assets/img/profile.jpg" alt="Ícone de perfil do usuário" class="perfil__icone">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="chamada">
+            <p class="chamada__texto">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.
+            </p>
+        </section>
+        <section class="perfil__container">
+            <h2 class="perfil__titulo">Perfil</h2>
+            <form action="">
+                <fieldset>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Foto</label>
+                        <div class="formulario__foto">
+                            <img src="/assets/img/profile.jpg" alt="Foto de perfil do usuário">
+                            <div>
+                                <a href="#" class="foto__editar">Clique na foto para editar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Nome</label>
+                        <input type="text">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Telefone</label>
+                        <input type="text">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Cidade</label>
+                        <input type="text">
+                    </div>
+                    <div class="formulario__campo">
+                        <label for="" class="formulario__label">Sobre</label>
+                        <textarea type="text" name="sobre" id="sobre"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Salvar" class="formulario__submit">
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">2022 - Desenvolvido por Alura.</footer>
+
+</body>
+
+</html>
