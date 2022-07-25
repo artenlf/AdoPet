@@ -14,14 +14,6 @@
     margin-bottom: .5em;
 }
 
-.formulario__tablet-desktop {
-    display: none;
-}
-
-.formulario__desktop {
-    display: none;
-}
-
 input {
     text-align: center;
     font-family: inherit;
@@ -63,14 +55,6 @@ input::placeholder {
         width: 344px;
     }
 
-    .formulario__mobile {
-        display: none;
-    }
-
-    .formulario__tablet-desktop {
-        display: flex;
-    }
-
     .formulario__label {
         font-size: 18px;
         margin: .5em auto;
@@ -99,14 +83,9 @@ input::placeholder {
     }
 
     .formulario__submit {
-        display: none;
         width: 174px;
         margin: 1em auto;
         font-weight: 700;
-    }
-
-    .formulario__mobile-tablet {
-        display: none;
     }
 
     .formulario__desktop {
