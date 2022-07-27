@@ -42,7 +42,7 @@ const mensagensDeErro = {
     },
     senha: {
         valueMissing: 'O campo senha não pode estar vazio.',
-        patternMismatch: 'A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, uma letra minúscula, um número e não deve conter símbolos.'
+        patternMismatch: 'A senha deve conter entre 6 a 12 caracteres, pelo menos uma letra maiúscula, uma letra minúscula, um número e não deve conter espaços.'
     },
     confirmasenha: {
         valueMissing: 'O campo confirme sua senha não pode estar vazio.',
@@ -62,6 +62,8 @@ function mostraMensagemDeErro(tipoDeInput, input) {
 
 const senha = document.getElementById('senha');
 const confirmaSenha = document.getElementById('confirmasenha');
+
+senha.pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ ]).{6,12}$"
 
 function validaSenha(input) {
     if (senha.value !== confirmaSenha.value) {
