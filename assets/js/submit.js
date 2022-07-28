@@ -1,4 +1,4 @@
-const button = document.querySelector('button');
+const button = document.getElementById('submit');
 
 const addPreLoader = () => {
     button.innerHTML = '<img src="assets/img/loading.png"class="loading">'
@@ -15,7 +15,6 @@ const processaSubmit = (evento) => {
     const nome = document.querySelector('input[name=nome]').value;
     const email = document.querySelector('input[name=email]').value;
     const senha = document.querySelector('input[name=senha]').value;
-    const confirmasenha = document.querySelector('input[name=confirmasenha]').value;
 
     fetch('https://api.sheetmonkey.io/form/b3mfMkWQY4knHztCZ1ACSi', {
 
@@ -25,8 +24,8 @@ const processaSubmit = (evento) => {
             'Content-Type': 'application/json'
         },
 
-        body: JSON.stringify({ nome, email, senha, confirmasenha })
+        body: JSON.stringify({ nome, email, senha })
     }).then(() => removePreLoader());
 };
 
-document.querySelector('form').addEventListener('submit', processaSubmit);
+document.getElementById('formulario').addEventListener('submit', processaSubmit);
