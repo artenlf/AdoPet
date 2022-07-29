@@ -33,8 +33,9 @@
     margin: 1em;
 }
 
-input {
+input, select {
     font-family: var(--fonte-principal);
+    color: var(--cinza-claro);
     font-size: 14px;
     margin: 0 auto;
     width: 280px;
@@ -45,12 +46,12 @@ input {
 }
 
 input::placeholder,
-#mensagem::placeholder {
-    padding: 12.5px;
+.formulario__mensagem::placeholder {
+    color: var(--cinza-claro);
 }
 
-input:focus, #mensagem:focus {
-    padding: 8px;
+input, textarea {
+    padding: .5em 0 .5em .5em;
 }
 
 .formulario__campo:first-child {
@@ -62,24 +63,56 @@ input:focus, #mensagem:focus {
     font-size: 14px;
     color: var(--cinza-claro);
     width: 280px;
-    height: 172px;
+    height: 140px;
     margin: 0 auto;
     border-radius: 6px;
     box-shadow: 0px 2px 4px #00000015;
     box-sizing: border-box;
 }
 
+.submit__container {
+    background-color: var(--cinza-fundo);
+    padding-bottom: .5em;
+    border-radius: 6px;
+}
+
 .formulario__submit {
-    display: flex;
-    justify-content: center;
+    display: block;
     background-color: var(--vermelho);
     font-weight: 600;
+    font-family: inherit;
     font-size: inherit;
     color: var(--branco);
-    width: 148px;
+    border-radius: 6px;
     height: 40px;
-    margin-top: 1.5em;
+    width: 148px;
+    margin: 2.5em auto 0 auto;
+    box-shadow: 2px 2px 4px var(--sombra);
     box-sizing: border-box;
+}
+
+.formulario span {
+    display: flex;
+    color: red;
+    font-size: 12px;
+    margin: .25em auto;
+}
+
+.loading {
+    display: flex;
+    width: 30px;
+    margin: 0 auto;
+    animation: spin 800ms infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -108,19 +141,24 @@ input:focus, #mensagem:focus {
         height: 628px;
     }
 
-    input {
+    input, select {
         width: 492px;
         height: 48px;
     }
 
-    .formulario__campo:last-child textarea {
+    .formulario__campo textarea {
         width: 492px;
         height: 172px;
     }
 
+    .submit__container {
+        background-color: var(--cinza-fundo);
+        padding: 1em 0;
+    }
+
     .formulario__submit {
         width: 164px;
-        margin: 2em auto;
+        margin: .5em auto;
     }
 
 }
@@ -146,7 +184,7 @@ input:focus, #mensagem:focus {
         margin: 1em 0 .5em 30px;
     }
     
-    input {
+    input, select {
         margin-bottom: .5em;
     }
 }

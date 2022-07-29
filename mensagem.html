@@ -40,36 +40,48 @@
             <p class="chamada__texto">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
         </section>
         <section class="mensagem__container">
-            <form action="">
-                <fieldset>
-                    <div class="formulario__campo">
-                        <label for="" class="formulario__label">Nome</label>
-                        <input type="text" name="nome" id="nome" required placeholder="Insira seu nome completo">
-                    </div>
-                    <div class="formulario__campo">
-                        <label for="" class="formulario__label">Telefone</label>
-                        <input type="tel" name="telefone" id="telefone" required
-                            placeholder="Insira seu telefone e/ou whatsapp">
-                    </div>
-                    <div class="formulario__campo">
-                        <label for="" class="formulario__label">Nome do Animal</label>
-                        <input type="text" name="nome-animal" id="animal" required
-                            placeholder="Por qual animal você se interessou?">
-                    </div>
-                    <div class="formulario__campo">
-                        <label for="" class="formulario__label">Mensagem</label>
-                        <textarea type="text" name="mensagem" id="mensagem" required
-                            placeholder="Escreva sua mensagem."></textarea>
-                    </div>
-                </fieldset>
-                <input type="submit" value="Enviar" class="formulario__submit">
+            <form action="https://formsubmit.co/adopet.artenlf@gmail.com" method="post" id="formulario"
+                class="formulario">
+                <div class="formulario__campo">
+                    <label for="nome" class="formulario__label">Nome</label>
+                    <input type="text" name="nome" id="nome" required data-tipo="nome"
+                        placeholder="Insira seu nome completo">
+                    <span class="formulario__mensagem-erro"></span>
+                </div>
+                <div class="formulario__campo">
+                    <label for="telefone" class="formulario__label">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" required data-tipo="telefone"
+                        placeholder="Insira seu telefone e/ou whatsapp">
+                    <span class="formulario__mensagem-erro"></span>
+                </div>
+                <div class="formulario__campo">
+                    <label for="nome-animal" class="formulario__label">Nome do Animal</label>
+                    <select name="nome-animal" id="nome-animal" required>
+                        <option value="" disabled selected>Por qual animal você se interessou?
+                            <!-- a linha abaixo será deletada após implementação do array -->
+                        </option>
+                        <option value="bruce">Bruce</option>
+                        <!-- fim da linha a ser deletada -->
+                    </select>
+                    <span class="formulario__mensagem-erro"></span>
+                </div>
+                <div class="formulario__campo">
+                    <label for="mensagem" class="formulario__label">Mensagem</label>
+                    <textarea type="text" name="mensagem" id="mensagem" required data-tipo="mensagem"
+                        placeholder="Escreva sua mensagem." class="formulario__mensagem"></textarea>
+                    <span class="formulario__mensagem-erro"></span>
+                </div>
+                <div class="submit__container">
+                    <button type="submit" id="submit" class="formulario__submit">Enviar</button>
+                </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/mensagem.html">
             </form>
         </section>
 
     </main>
 
     <footer class="rodape">2022 - Desenvolvido por Alura.</footer>
-
+    <script src="assets/js/valida-mensagem.js"></script>
 </body>
 
 </html>
