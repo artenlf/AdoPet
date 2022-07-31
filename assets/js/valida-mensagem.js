@@ -20,11 +20,6 @@ function valida(input) {
     }
 }
 
-const validadores = {
-    telefone: input => mascaraTelefone(input)
-    // textarea: input => mensagemSenha(input)
-}
-
 const tiposDeErro = [
     'valueMissing',
     'customError'
@@ -40,7 +35,7 @@ const mensagensDeErro = {
     },
     mensagem: {
         valueMissing: 'O campo de mensagem não pode estar vazio.',
-        customError: 'A mensagem deve conter ao menos 50 caracteres.'
+        customError: 'A mensagem deve conter pelo menos 50 caracteres.'
     }
 }
 
@@ -85,23 +80,19 @@ function validaTelefone(input) {
 
 // --------------- validação caracteres campo mensagem -------------
 
-// const textarea = document.getElementById('mensagem');
+const campoMensagem = document.getElementById('mensagem');
 
-// function validaMensagem(input) {
-//     if (textarea.length < 50) {
-//         textarea.setCustomValidity('A mensagem deve conter ao menos 50 caracteres.');
-//     } else {
-//         textarea.setCustomValidity('');
-//     }
-// }
-
-// textarea.onchange = validaMensagem;
-// textarea.onkeyup = validaMensagem;
-
-
-
+campoMensagem.addEventListener('input', (evento) => {
+    console.log(campoMensagem.value.length);
+    if (campoMensagem.value.length > 50) {
+        campoMensagem.setCustomValidity('');
+    } else {
+        campoMensagem.setCustomValidity(`Deve conter pelo menos 50 caracteres. Faltam ${(50-campoMensagem.value.length)} caracteres.`)
+    }
+})
 
 // ------------------ submit ---------------------------
+
 const addPreLoader = () => {
     const button = document.getElementById('submit');
 
