@@ -67,7 +67,7 @@ senha.pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ ]).{6,12}$"
 
 function validaSenha(input) {
     if (senha.value !== confirmaSenha.value) {
-        confirmaSenha.setCustomValidity('As senhas digitadas devem ser iguais.');
+        confirmaSenha.setCustomValidity('As senhas não conferem.');
     } else {
         confirmaSenha.setCustomValidity('');
     }
