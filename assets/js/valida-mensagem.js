@@ -59,7 +59,6 @@ function mostraMensagemDeErro(tipoDeInput, input) {
 const mascaraTelefone = {
     telefone(value) {
         validaTelefone();
-        console.log(telefone.value.length)
         return value
             .replace(/\D/g, '')
             .replace(/(\d{2})(\d)/, '($1) $2')
@@ -84,14 +83,6 @@ function validaTelefone(input) {
     }
 };
 
-
-//     // if (telefone.value == null) {
-//     //     mensagem.setCustomValidity('O campo de telefone deve estar preenchido corretamente')
-//     // }
-
-// })
-
-
 // --------------- validação caracteres campo mensagem -------------
 
 // const textarea = document.getElementById('mensagem');
@@ -106,7 +97,6 @@ function validaTelefone(input) {
 
 // textarea.onchange = validaMensagem;
 // textarea.onkeyup = validaMensagem;
-
 
 
 
