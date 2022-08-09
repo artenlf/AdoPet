@@ -91,6 +91,11 @@ input, textarea {
     box-sizing: border-box;
 }
 
+.formulario__submit:hover {
+    background-color: var(--vermelho-hover);
+
+}
+
 .formulario span {
     display: flex;
     color: red;
