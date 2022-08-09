@@ -47,6 +47,10 @@ input::placeholder {
     box-sizing: border-box;
 }
 
+.formulario__submit:hover {
+    background-color: var(--vermelho-hover);
+}
+
 .formulario span {
     color: red;
     font-size: 12px;

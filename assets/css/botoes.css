@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+.botao:hover {
+    background-color: var(--vermelho-hover);
+}
+
 @media screen and (min-width: 768px) {
     .botao {
         font-size: 18px;
