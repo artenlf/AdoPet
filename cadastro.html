@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro | AdoPet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="cadastro.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="cadastro.css" />
+  </head>
 
-<body>
+  <body>
     <header class="cabecalho">
-        <div class="cabecalho__botoes">
-            <img src="assets/img/Logo-Cabecalho.svg" alt="Logo da Adopet" class="cabecalho__logo">
-            <a href="index.html" class="botoes__links">
-                <img src="assets/img/Casa.svg" alt="Ícone de uma casa">
-            </a>
-            <a href="mensagem.html" class="cabecalho__links">
-                <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope">
-            </a>
-        </div>
+      <div class="cabecalho__botoes">
+        <img src="assets/img/Logo-Cabecalho.svg" alt="Logo da Adopet" class="cabecalho__logo" />
+        <a href="index.html" class="botoes__links">
+          <img src="assets/img/Casa.svg" alt="Ícone de uma casa" />
+        </a>
+        <a href="mensagem.html" class="cabecalho__links">
+          <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope" />
+        </a>
+      </div>
     </header>
 
     <main>
-        <section class="logo__alternativo">
-            <img src="assets/img/Logo-azul.svg" alt="Logo da AdoPet" class="logo__alternativo-imagem">
-        </section>
-        <section class="chamada">
-            <p class="chamada__texto">Ainda não tem cadastro?</p>
-            <p class="chamada__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
-        </section>
-        <section class="formulario">
-            <form id="formulario">
-                <fieldset>
-                    <div class="formulario__campo">
-                        <label for="nome" class="formulario__label">Nome</label>
-                        <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo"
-                            data-tipo="nome">
-                        <span class="formulario__mensagem-erro"></span>
-                    </div>
-                    <div class="formulario__campo">
-                        <label for="email" class="formulario__label">Email</label>
-                        <input type="email" name="email" id="email" required placeholder="Escolha seu melhor email"
-                            data-tipo="email">
-                        <span class="formulario__mensagem-erro"></span>
-                    </div>
-                    <div class="formulario__campo">
-                        <label for="senha" class="formulario__label">Senha</label>
-                        <input type="password" name="senha" id="senha" required placeholder="Crie uma senha"
-                            data-tipo="senha">
-                        <span class="formulario__mensagem-erro"></span>
-                        <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
-                    </div>
-                    <div class="formulario__campo">
-                        <label for="confirmasenha" class="formulario__label">Confirme sua senha</label>
-                        <input type="password" name="confirmasenha" id="confirmasenha" required
-                            placeholder="Repita a senha criada acima" data-tipo="confirmasenha">
-                        <span class="formulario__mensagem-erro"></span>
-                        <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
-                    </div>
-                </fieldset>
-                <button type="submit" id="submit" class="formulario__submit">Cadastrar</button>
-            </form>
-        </section>
+      <section class="logo__alternativo">
+        <img src="assets/img/Logo-azul.svg" alt="Logo da AdoPet" class="logo__alternativo-imagem" />
+      </section>
+      <section class="chamada">
+        <p class="chamada__texto">Ainda não tem cadastro?</p>
+        <p class="chamada__texto">Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
+      </section>
+      <section class="formulario">
+        <form id="formulario">
+          <fieldset>
+            <div class="formulario__campo">
+              <label for="nome" class="formulario__label">Nome</label>
+              <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo" data-tipo="nome" />
+              <span class="formulario__mensagem-erro"></span>
+            </div>
+            <div class="formulario__campo">
+              <label for="email" class="formulario__label">Email</label>
+              <input type="email" name="email" id="email" required placeholder="Escolha seu melhor email" data-tipo="email" />
+              <span class="formulario__mensagem-erro"></span>
+            </div>
+            <div class="formulario__campo">
+              <label for="senha" class="formulario__label">Senha</label>
+              <input type="password" name="senha" id="senha" required placeholder="Crie uma senha" data-tipo="senha" />
+              <div class="formulario__mensagem-erro-container">
+                <span class="formulario__mensagem-erro"></span>
+                <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
+              </div>
+            </div>
+            <div class="formulario__campo">
+              <label for="confirmasenha" class="formulario__label">Confirme sua senha</label>
+              <input
+                type="password"
+                name="confirmasenha"
+                id="confirmasenha"
+                required
+                placeholder="Repita a senha criada acima"
+                data-tipo="confirmasenha"
+              />
+              <span class="formulario__mensagem-erro"></span>
+              <!-- falta adicionar o checkbox para visualizar a senha. mudar tipo password para text via js-->
+            </div>
+          </fieldset>
+          <button type="submit" id="submit" class="formulario__submit">Cadastrar</button>
+        </form>
+      </section>
     </main>
     <footer class="rodape">2022 - Desenvolvido por Alura.</footer>
     <script src="assets/js/valida-cadastro.js"></script>
     <script src="assets/js/submit.js"></script>
     <script src="assets/js/mostra-senha.js"></script>
-</body>
-
+  </body>
 </html>
