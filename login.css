@@ -1,64 +1,78 @@
 main {
-    margin-bottom: 7em;
+  margin-bottom: 7em;
 }
 
 .chamada {
-    margin: 3em auto 2em auto;
+  margin: 3em auto 2em auto;
 }
 
 .formulario__campo {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .esqueci__senha {
-    display: block;
-    color: var(--vermelho);
-    text-decoration: underline;
-    margin-top: -1em;
-    margin-bottom: 1.5em;
+  display: block;
+  color: var(--vermelho);
+  text-decoration: underline;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
 }
 
 .formulario__submit {
-    margin-bottom: -1.63px;
+  margin-bottom: -1.63px;
+}
+
+.loading {
+  display: flex;
+  width: 30px;
+  margin: 0 auto;
+  animation: spin 800ms infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    margin-bottom: 19.5em;
+  }
 
-    main {
-        margin-bottom: 19.5em;
-    }
+  .chamada {
+    margin: 2em auto -2em auto;
+  }
 
-    .chamada {
-        margin: 2em auto -2em auto;
-    }
+  .esqueci__senha {
+    display: none;
+  }
 
-    .esqueci__senha {
-        display: none;
-    }
+  .formulario__campo {
+    margin: 1em;
+  }
 
-    .formulario__campo {
-        margin: 1em;
-    }
-
-    .formulario__submit {
-        margin: 1em 0 2.5px 0;
-    }
+  .formulario__submit {
+    margin: 1em 0 2.5px 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    
-    main {
-        margin-bottom: 12.563em;
-    }
+  main {
+    margin-bottom: 12.563em;
+  }
 
-    .chamada {
-        margin-top: 3em;
-        margin-bottom: .25em;
-    }
-    
-    .formulario__submit {
-        display: inherit;
-        margin: 1em auto 3.5px auto;
-    }
+  .chamada {
+    margin-top: 3em;
+    margin-bottom: 0.25em;
+  }
 
+  .formulario__submit {
+    display: inherit;
+    margin: 1em auto 3.5px auto;
+  }
 }
