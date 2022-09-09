@@ -40,6 +40,12 @@ const processaLogin = (evento) => {
     setTimeout(() => {
       window.location.href = "animais.html";
     }, 2500);
+
+    // token para administrar acesso em áreas logadas. por enquanto não será utilizado.
+
+    // let token = Math.random().toString(16).substr(2);
+    // localStorage.setItem("token", token);
+    localStorage.setItem("usuarioLogado", JSON.stringify(validaUsuario));
   } else {
     campoErro.innerHTML = "Usuário/Senha inválido(s)";
     email.setAttribute("style", "color: red");
