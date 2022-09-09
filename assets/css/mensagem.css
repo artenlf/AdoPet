@@ -2,194 +2,194 @@
 @import url(/animais.css);
 @import url(/assets/css/background-alternativo-3.css);
 
-
 .chamada {
-    width: 226px;
-    height: 60px;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+  width: 226px;
+  height: 60px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .chamada__texto {
-    margin: 0;
+  margin: 0;
 }
 
-.mensagem__container, .perfil__container {
-    background-color: var(--cinza-fundo);
-    border-radius: 10px;
-    width: 312px;
-    height: 636px;
-    margin: 0 auto 13.41px auto;
+.mensagem__container,
+.perfil__container {
+  background-color: var(--cinza-fundo);
+  border-radius: 10px;
+  width: 312px;
+  height: 636px;
+  margin: 0 auto 13.41px auto;
 }
 
 .formulario__campo {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .formulario__label {
-    font-weight: 600;
-    color: var(--azul-fundo);
-    margin: 1em;
+  font-weight: 600;
+  color: var(--azul-fundo);
+  margin: 1em;
 }
 
-input, select {
-    font-family: var(--fonte-principal);
-    color: var(--cinza-claro);
-    font-size: 14px;
-    margin: 0 auto;
-    width: 280px;
-    height: 48px;
-    border-radius: 6px;
-    box-shadow: 0px 2px 4px #00000015;
-    box-sizing: border-box;
+input,
+select {
+  font-family: var(--fonte-principal);
+  color: var(--cinza-claro);
+  font-size: 14px;
+  margin: 0 auto;
+  width: 280px;
+  height: 48px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px #00000015;
+  box-sizing: border-box;
 }
 
 input::placeholder,
 .formulario__mensagem::placeholder {
-    color: var(--cinza-claro);
+  color: var(--cinza-claro);
 }
 
-input, textarea {
-    padding: .5em 0 .5em .5em;
+input,
+textarea {
+  padding: 0.5em 0 0.5em 0.5em;
 }
 
 .formulario__campo:first-child {
-    margin-top: 1.2em;
+  margin-top: 1.2em;
 }
 
 .formulario__campo textarea {
-    font-family: var(--fonte-principal);
-    font-size: 14px;
-    color: var(--cinza-claro);
-    width: 280px;
-    height: 140px;
-    margin: 0 auto;
-    border-radius: 6px;
-    box-shadow: 0px 2px 4px #00000015;
-    box-sizing: border-box;
+  font-family: var(--fonte-principal);
+  font-size: 14px;
+  color: var(--cinza-claro);
+  width: 280px;
+  height: 140px;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px #00000015;
+  box-sizing: border-box;
 }
 
 .submit__container {
-    background-color: var(--cinza-fundo);
-    padding-bottom: .5em;
-    border-radius: 6px;
+  background-color: var(--cinza-fundo);
+  padding-bottom: 0.5em;
+  border-radius: 6px;
 }
 
 .formulario__submit {
-    display: block;
-    background-color: var(--vermelho);
-    font-weight: 600;
-    font-family: inherit;
-    font-size: inherit;
-    color: var(--branco);
-    border-radius: 6px;
-    height: 40px;
-    width: 148px;
-    margin: 2.5em auto 0 auto;
-    box-shadow: 2px 2px 4px var(--sombra);
-    box-sizing: border-box;
+  display: block;
+  background-color: var(--vermelho);
+  font-weight: 600;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--branco);
+  border-radius: 6px;
+  height: 40px;
+  width: 148px;
+  margin: 2.5em auto 0 auto;
+  box-shadow: 2px 2px 4px var(--sombra);
+  box-sizing: border-box;
 }
 
 .formulario__submit:hover {
-    background-color: var(--vermelho-hover);
-
+  background-color: var(--vermelho-hover);
 }
 
 .formulario span {
-    display: flex;
-    color: red;
-    font-size: 12px;
-    margin: .25em auto;
+  display: flex;
+  color: red;
+  font-size: 12px;
+  margin: 0.25em auto;
 }
 
 .loading {
-    display: flex;
-    width: 30px;
-    margin: 0 auto;
-    animation: spin 800ms infinite linear;
+  display: flex;
+  width: 30px;
+  margin: 0 auto;
+  animation: spin 800ms infinite linear;
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (min-width: 768px) {
-    
-    main {
-        margin-bottom: 64.6px;
-    }
+  main {
+    margin-bottom: 64.6px;
+  }
 
-    .chamada {
-        display: flex;
-        justify-content: center;
-        width: 524px;
-        height: 52px;
-        margin-bottom: 2.5em;
-    }
+  .chamada {
+    display: flex;
+    justify-content: center;
+    width: 524px;
+    height: 52px;
+    margin-bottom: 2.5em;
+  }
 
+  .chamada__texto {
+    display: flex;
+    width: inherit;
+    height: inherit;
+  }
 
-    .chamada__texto {
-        display: flex;
-        width: inherit;
-        height: inherit;
-    }
+  .mensagem__container {
+    width: 524px;
+    height: 628px;
+  }
 
-    .mensagem__container {
-        width: 524px;
-        height: 628px;
-    }
+  input,
+  select {
+    width: 492px;
+    height: 48px;
+  }
 
-    input, select {
-        width: 492px;
-        height: 48px;
-    }
+  .formulario__campo textarea {
+    width: 492px;
+    height: 172px;
+  }
 
-    .formulario__campo textarea {
-        width: 492px;
-        height: 172px;
-    }
+  .submit__container {
+    background-color: var(--cinza-fundo);
+    padding: 1em 0;
+  }
 
-    .submit__container {
-        background-color: var(--cinza-fundo);
-        padding: 1em 0;
-    }
-
-    .formulario__submit {
-        width: 164px;
-        margin: .5em auto;
-    }
-
+  .formulario__submit {
+    width: 164px;
+    margin: 0.5em auto;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    main {
-        margin-top: 38.96px;
-        margin-bottom: 40.66px;
-    }
+  main {
+    margin-top: 38.96px;
+    margin-bottom: 40.66px;
+  }
 
-    .chamada {
-        width: 492px;
-        margin-bottom: 2.3em;
-    }
+  .chamada {
+    width: 492px;
+    margin-bottom: 2.3em;
+  }
 
-    .mensagem__container {
-        width: 552px;
-        height: 623px;
-        margin: 0 auto;
-    }
+  .mensagem__container {
+    width: 552px;
+    height: 623px;
+    margin: 0 auto;
+  }
 
-    .formulario__label {
-        margin: 1em 0 .5em 30px;
-    }
-    
-    input, select {
-        margin-bottom: .5em;
-    }
+  .formulario__label {
+    margin: 1em 0 0.5em 30px;
+  }
+
+  input,
+  select {
+    margin-bottom: 0.5em;
+  }
 }

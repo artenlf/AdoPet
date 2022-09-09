@@ -1,22 +1,22 @@
 .logo {
-    text-align: center;
-    margin-top: 1em;
+  text-align: center;
+  margin-top: 1em;
 }
 
 .logo__imagem {
-    width: 187px;
+  width: 187px;
 }
 
 @media screen and (min-width: 768px) {
-    .logo__imagem {
-        width: 252px;
-        height: 62px;
-    }
+  .logo__imagem {
+    width: 252px;
+    height: 62px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .logo__imagem {
-        width: 260px;
-        height: 64px;
-    }
+  .logo__imagem {
+    width: 260px;
+    height: 64px;
+  }
 }

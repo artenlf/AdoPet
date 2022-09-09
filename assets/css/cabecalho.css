@@ -1,47 +1,44 @@
 .cabecalho {
-    display: inline-flex;
-    align-items: center;
-    padding-bottom: 2em;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 2em;
 }
 
 .cabecalho__logo {
-    display: none;
+  display: none;
 }
 
 .cabecalho__botoes {
-    display: inline-flex;
-    align-items: center;
-    padding: 3em 3em;
+  display: inline-flex;
+  align-items: center;
+  padding: 3em 3em;
 }
 
 .botoes__links {
-    margin-right: 3.5em;
+  margin-right: 3.5em;
 }
 
 @media screen and (min-width: 768px) {
+  .cabecalho {
+    margin-left: 2em;
+  }
 
-    .cabecalho{
-        margin-left: 2em;
-    }
+  .cabecalho__botoes {
+    justify-content: center;
+    width: 20vw;
+    margin-left: 3.5em;
+    padding: 3.5em 0 0 3.5em;
+  }
 
-
-    .cabecalho__botoes {
-        justify-content: center;
-        width: 20vw;
-        margin-left: 3.5em;
-        padding: 3.5em 0 0 3.5em;
-    }
-
-
-    .cabecalho__logo {
-        display: flex;
-        margin-right: 3.5em;
-        max-height: 128px;
-    }
+  .cabecalho__logo {
+    display: flex;
+    margin-right: 3.5em;
+    max-height: 128px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .cabecalho {
-        margin-left: 0;
-    }
+  .cabecalho {
+    margin-left: 0;
+  }
 }
