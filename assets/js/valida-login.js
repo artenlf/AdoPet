@@ -31,6 +31,9 @@ const processaLogin = (evento) => {
         nome: usuario.nomeCadastro,
         email: usuario.emailCadastro,
         senha: usuario.senhaCadastro,
+        telefone: "",
+        cidade: "",
+        sobre: "",
       };
     }
   });

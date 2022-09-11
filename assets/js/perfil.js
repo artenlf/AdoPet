@@ -6,17 +6,23 @@ let sobre = document.getElementById("sobre");
 
 nome.placeholder = usuarioLogado.nome;
 
-let perfil = {
-  ...usuarioLogado,
-  telefone: "",
-  cidade: "",
-  sobre: "",
-};
-
-localStorage.setItem("perfil", JSON.stringify(perfil));
-
 const salvar = (evento) => {
   evento.preventDefault();
+
+  let novosDados = {
+    nome: usuarioLogado.nome,
+    email: usuarioLogado,
+    senha: usuarioLogado.senha,
+    telefone: telefone.value,
+    cidade: cidade.value,
+    sobre: sobre.value,
+  };
+
+  localStorage.setItem("usuarioLogado", JSON.stringify(novosDados));
 };
+
+telefone.placeholder = usuarioLogado.telefone;
+cidade.placeholder = usuarioLogado.cidade;
+sobre.placeholder = usuarioLogado.sobre;
 
 document.getElementById("formulario").addEventListener("submit", salvar);
