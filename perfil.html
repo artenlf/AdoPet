@@ -41,10 +41,10 @@
       </section>
       <section class="perfil__container">
         <h2 class="perfil__titulo">Perfil</h2>
-        <form action="">
+        <form id="formulario">
           <fieldset>
             <div class="formulario__campo">
-              <label for="" class="formulario__label">Foto</label>
+              <label class="formulario__label">Foto</label>
               <div class="formulario__foto">
                 <img src="/assets/img/profile.jpg" alt="Foto de perfil do usuário" />
                 <div>
@@ -53,23 +53,23 @@
               </div>
             </div>
             <div class="formulario__campo">
-              <label for="" class="formulario__label">Nome</label>
-              <input type="text" id="nome" disabled placeholder=""></input>
+              <label class="formulario__label">Nome</label>
+              <input type="text" id="nome" disabled placeholder="" />
             </div>
             <div class="formulario__campo">
-              <label for="" class="formulario__label">Telefone</label>
-              <input type="text" />
+              <label class="formulario__label">Telefone</label>
+              <input type="text" id="telefone" placeholder="" />
             </div>
             <div class="formulario__campo">
-              <label for="" class="formulario__label">Cidade</label>
-              <input type="text" />
+              <label class="formulario__label">Cidade</label>
+              <input type="text" id="cidade" placeholder="" />
             </div>
             <div class="formulario__campo">
-              <label for="" class="formulario__label">Sobre</label>
-              <textarea type="text" name="sobre" id="sobre"></textarea>
+              <label class="formulario__label">Sobre</label>
+              <textarea type="text" name="sobre" id="sobre" placeholder=""></textarea>
             </div>
           </fieldset>
-          <input type="submit" value="Salvar" class="formulario__submit" />
+          <input type="submit" value="Salvar" class="formulario__submit" id="submit" />
         </form>
       </section>
     </main>
