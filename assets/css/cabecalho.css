@@ -37,6 +37,11 @@
   }
 }
 
+.cabecalho__logo-home:hover,
+.cabecalho__logo-mensagem:hover {
+  transform: scale(120%);
+}
+
 @media screen and (min-width: 1440px) {
   .cabecalho {
     margin-left: 0;

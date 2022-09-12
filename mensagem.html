@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mensagem | Adopet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="/assets/css/mensagem.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="/assets/css/mensagem.css" />
+  </head>
 
-<body>
+  <body>
     <header class="cabecalho">
-        <div class="cabecalho__separador">
-            <div class="cabecalho__botoes">
-                <img src="assets/img/Logo-Cabecalho.svg" alt="Logo da Adopet" class="cabecalho__logo">
-                <a href="index.html" class="botoes__links">
-                    <img src="assets/img/Casa.svg" alt="Ícone de uma casa">
-                </a>
-                <a href="#" class="cabecalho__links">
-                    <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope">
-                </a>
-            </div>
-            <div class="cabecalho__perfil">
-                <a href="#" class="perfil__link">
-                    <img src="assets/img/Usuário.svg" alt="Ícone de perfil do usuário" class="perfil__icone">
-                </a>
-            </div>
+      <div class="cabecalho__separador">
+        <div class="cabecalho__botoes">
+          <img src="assets/img/Logo-Cabecalho.svg" alt="Logo da Adopet" class="cabecalho__logo" />
+          <a href="index.html" class="botoes__links">
+            <img src="assets/img/Casa.svg" alt="Ícone de uma casa" class="cabecalho__logo-home" />
+          </a>
+          <a href="#" class="cabecalho__links">
+            <img src="assets/img/Mensagens.svg" alt="Ícone de um envelope" class="cabecalho__logo-mensagem" />
+          </a>
         </div>
+        <div class="cabecalho__perfil">
+          <a href="#" class="perfil__link">
+            <img src="assets/img/Usuário.svg" alt="Ícone de perfil do usuário" class="perfil__icone" />
+          </a>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="chamada">
-            <p class="chamada__texto">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
-        </section>
-        <section class="mensagem__container">
-            <form action="https://formsubmit.co/adopet.artenlf@gmail.com" method="post" id="formulario"
-                class="formulario">
-                <div class="formulario__campo">
-                    <label for="nome" class="formulario__label">Nome</label>
-                    <input type="text" name="nome" id="nome" required data-tipo="nome"
-                        placeholder="Insira seu nome completo">
-                    <span class="formulario__mensagem-erro"></span>
-                </div>
-                <div class="formulario__campo">
-                    <label for="telefone" class="formulario__label">Telefone</label>
-                    <input type="tel" name="telefone" id="telefone" required data-tipo="telefone"
-                        placeholder="Insira seu telefone e/ou whatsapp">
-                    <span class="formulario__mensagem-erro"></span>
-                </div>
-                <div class="formulario__campo">
-                    <label for="nome-animal" class="formulario__label">Nome do Animal</label>
-                    <select name="nome-animal" id="nome-animal" required>
-                        <option value="" disabled selected>Por qual animal você se interessou?
-                            <!-- a linha abaixo será deletada após implementação do array -->
-                        </option>
-                        <option value="bruce">Bruce</option>
-                        <!-- fim da linha a ser deletada -->
-                    </select>
-                    <span class="formulario__mensagem-erro"></span>
-                </div>
-                <div class="formulario__campo">
-                    <label for="mensagem" class="formulario__label">Mensagem</label>
-                    <textarea type="text" name="mensagem" id="mensagem" required data-tipo="mensagem"
-                        placeholder="Escreva sua mensagem." class="formulario__mensagem"></textarea>
-                    <span class="formulario__mensagem-erro"></span>
-                </div>
-                <div class="submit__container">
-                    <button type="submit" id="submit" class="formulario__submit">Enviar</button>
-                </div>
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/mensagem.html">
-            </form>
-        </section>
-
+      <section class="chamada">
+        <p class="chamada__texto">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
+      </section>
+      <section class="mensagem__container">
+        <form action="https://formsubmit.co/adopet.artenlf@gmail.com" method="post" id="formulario" class="formulario">
+          <div class="formulario__campo">
+            <label for="nome" class="formulario__label">Nome</label>
+            <input type="text" name="nome" id="nome" required data-tipo="nome" placeholder="Insira seu nome completo" />
+            <span class="formulario__mensagem-erro"></span>
+          </div>
+          <div class="formulario__campo">
+            <label for="telefone" class="formulario__label">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" required data-tipo="telefone" placeholder="Insira seu telefone e/ou whatsapp" />
+            <span class="formulario__mensagem-erro"></span>
+          </div>
+          <div class="formulario__campo">
+            <label for="nome-animal" class="formulario__label">Nome do Animal</label>
+            <select name="nome-animal" id="nome-animal" required>
+              <option value="" disabled selected>
+                Por qual animal você se interessou?
+                <!-- a linha abaixo será deletada após implementação do array -->
+              </option>
+              <option value="bruce">Bruce</option>
+              <!-- fim da linha a ser deletada -->
+            </select>
+            <span class="formulario__mensagem-erro"></span>
+          </div>
+          <div class="formulario__campo">
+            <label for="mensagem" class="formulario__label">Mensagem</label>
+            <textarea
+              type="text"
+              name="mensagem"
+              id="mensagem"
+              required
+              data-tipo="mensagem"
+              placeholder="Escreva sua mensagem."
+              class="formulario__mensagem"
+            ></textarea>
+            <span class="formulario__mensagem-erro"></span>
+          </div>
+          <div class="submit__container">
+            <button type="submit" id="submit" class="formulario__submit">Enviar</button>
+          </div>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/mensagem.html" />
+        </form>
+      </section>
     </main>
 
     <footer class="rodape">2022 - Desenvolvido por Alura.</footer>
     <script src="assets/js/valida-mensagem.js"></script>
-</body>
-
+  </body>
 </html>
