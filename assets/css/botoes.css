@@ -19,6 +19,7 @@
   margin: 1em auto;
   box-shadow: 2px 2px 4px var(--sombra);
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .botao:hover {

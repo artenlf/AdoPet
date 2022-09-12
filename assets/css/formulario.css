@@ -33,6 +33,16 @@ input::placeholder {
   color: var(--cinza-claro);
 }
 
+.verSenha,
+.verConfirmaSenha {
+  color: var(--cinza-claro);
+  cursor: pointer;
+  left: 135px;
+  position: relative;
+  top: 27.5px;
+  width: 16px;
+}
+
 .formulario__submit {
   background-color: var(--vermelho);
   font-weight: 600;
@@ -45,6 +55,7 @@ input::placeholder {
   margin-top: 0.5em;
   box-shadow: 2px 2px 4px var(--sombra);
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .formulario__submit:hover {
@@ -97,6 +108,11 @@ input::placeholder {
     margin: 0.5em auto;
   }
 
+  .verSenha,
+  .verConfirmaSenha {
+    left: 150px;
+  }
+
   .formulario__submit {
     width: 164px;
     margin: 1.5em auto;
@@ -121,6 +137,11 @@ input::placeholder {
 
   .formulario__label {
     font-weight: 600;
+  }
+
+  .verSenha,
+  .verConfirmaSenha {
+    left: 160px;
   }
 
   .formulario__submit {

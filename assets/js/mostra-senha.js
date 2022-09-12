@@ -1,32 +1,22 @@
-const senhaInput = document.getElementById('senha');
-const confirmaSenhaInput = document.getElementById('confirmasenha');
+const botaoVerSenha = document.getElementById("verSenha");
+const botaoVerConfirmaSenha = document.getElementById("verConfirmaSenha");
 
-senhaInput.addEventListener('click', evento => {
-    let inputEhSenha = senhaInput.type == 'password';
+botaoVerSenha.addEventListener("click", (evento) => {
+  const senhaInput = document.getElementById("senha");
 
-    if (inputEhSenha) {
-        mostraSenha();
-    } else {
-        ocultaSenha();
-    }
+  if (senhaInput.getAttribute("type") == "password") {
+    senhaInput.setAttribute("type", "text");
+  } else {
+    senhaInput.setAttribute("type", "password");
+  }
 });
 
-confirmaSenhaInput.addEventListener('click', evento => {
-    let inputEhSenha = confirmaSenhaInput.type == 'password';
+botaoVerConfirmaSenha.addEventListener("click", (evento) => {
+  const confirmaSenhaInput = document.getElementById("confirmasenha");
 
-    if (inputEhSenha) {
-        mostraSenha();
-    } else {
-        ocultaSenha();
-    }
+  if (confirmaSenhaInput.getAttribute("type") == "password") {
+    confirmaSenhaInput.setAttribute("type", "text");
+  } else {
+    confirmaSenhaInput.setAttribute("type", "password");
+  }
 });
-
-function mostraSenha() {
-    senhaInput.setAttribute('type', 'text');
-    confirmaSenhaInput.setAttribute('type', 'text');
-};
-
-function ocultaSenha() {
-    senhaInput.setAttribute('type', 'password');
-    confirmaSenhaInput.setAttribute('type', 'password');
-};
