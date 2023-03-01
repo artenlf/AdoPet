@@ -1,17 +1,19 @@
 # AdoPet
 
-## Index
+Aplicação desenvolvida para a empresa AdoPet, utilizando HTML, CSS e JavaScript vanilla, seguindo a metodologia Mobile-First e funcionalidades como formulário de cadastro, tela de login e painel de usuário.
 
-- [Introdução](#Introdução)
-- [Objetivo do projeto](#Objetivo)
-- [Status](#Status)
-- [Features](#Features)
-- [Ideias de Melhoria](#Melhorias)
-- [Tecnologias utilizadas](#Tecnologias)
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **AdoPet**
+| :label: Tecnologias | javascript, html, css
+| :rocket: URL         | adopet-taupe.vercel.app
+| :fire: Desafio     | shorturl.at/qvC27
 
-### Introdução
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/1.jpeg#vitrinedev)
 
-- Site desenvolvido para a empresa AdoPet, utilizando metodologia Mobile-First e emprego de formulário de cadastro, login e painel de usuário.
+## Detalhes do projeto
+
+Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...
 
 ### Objetivo
 
@@ -19,7 +21,7 @@
 
 ### Status
 
-- Deployed (beta) - implementando novas features e em fase de polimento.
+- Deployed
 
 ### Features
 
@@ -35,17 +37,6 @@
 - [x] Tela mensagem com aplicação de máscara no campo Telefone;
 - [x] Envio de formulário de mensagem para e-mail funcional (FormSubmit)
 - [ ] Edição de foto de perfil
-
-### Melhorias
-
-#### Ideias após desenvolvimento do protótipo Figma
-
-- [ ] UX do protótipo não tem link direto para página de animais;
-- [ ] Página de mensagens específica para usuários já logados;
-
-#### Arquitetura de projeto
-- [ ] Reorganização da estrutura de projeto, utilizando metodologias B-E-M e Atomic Design;
-- [ ] Aplicação de SPA utilizando biblioteca React;
 
 ### Tecnologias
 
