@@ -43,3 +43,11 @@ Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, pró
 <img align="center" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
 <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+
+### Screenshots
+
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/1.jpeg)
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/2.jpeg)
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/3.jpeg)
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/4.jpeg)
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/5.jpeg)
