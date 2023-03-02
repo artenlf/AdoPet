@@ -13,8 +13,6 @@ Aplicação desenvolvida para a empresa AdoPet, utilizando HTML, CSS e JavaScrip
 
 ## Detalhes do projeto
 
-Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...
-
 ### Objetivo
 
 - Aplicar e consolidar conhecimentos em HTML, CSS e JavaScript (vanilla), utilizando Trello como gestor de tasks e protótipo do figma.
