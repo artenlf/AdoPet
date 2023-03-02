@@ -1,17 +1,17 @@
 # AdoPet
 
-Aplicação desenvolvida para a empresa AdoPet, utilizando HTML, CSS e JavaScript vanilla, seguindo a metodologia Mobile-First e funcionalidades como formulário de cadastro, tela de login e painel de usuário.
+## Index
 
-| :placard: Vitrine.Dev |     |
-| -------------  | --- |
-| :sparkles: Nome        | **AdoPet**
-| :label: Tecnologias | javascript, html, css
-| :rocket: URL         | adopet-taupe.vercel.app
-| :fire: Desafio     | shorturl.at/qvC27
+- [Introdução](#Introdução)
+- [Objetivo do projeto](#Objetivo)
+- [Status](#Status)
+- [Features](#Features)
+- [Ideias de Melhoria](#Melhorias)
+- [Tecnologias utilizadas](#Tecnologias)
 
-![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/1.jpeg#vitrinedev)
+### Introdução
 
-## Detalhes do projeto
+- Site desenvolvido para a empresa AdoPet, utilizando metodologia Mobile-First e emprego de formulário de cadastro, login e painel de usuário.
 
 ### Objetivo
 
@@ -41,3 +41,11 @@ Aplicação desenvolvida para a empresa AdoPet, utilizando HTML, CSS e JavaScrip
 <img align="center" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
 <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+
+### Screenshots
+
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/1.jpeg)
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/2.jpeg)
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/3.jpeg)
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/4.jpeg)
+![](https://github.com/artenlf/AdoPet/blob/main/assets/screenshots/5.jpeg)
